@@ -11,5 +11,13 @@ sortButton.addEventListener('click', function() {
     const minValue = parseInt(numberMin.value)
     const maxValue = parseInt(numberMax.value)
     const sort = sortNumber(minValue, maxValue)
-    document.querySelector('#result').innerHTML = sort
+    const result = document.querySelector('#result')
+    if (minValue > maxValue) {
+        result.style.color = 'red'
+        result.style.fontsize = '10px'
+        return result.innerHTML = 'ERRO: O menor número é maior que o maior número'
+    } else {
+        result.style.color = 'white'
+    return result.innerHTML = sort
+    }
 })

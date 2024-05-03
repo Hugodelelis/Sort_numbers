@@ -50,17 +50,20 @@ body {
 }
 
 #result {
-    font-size: 10rem;
+    margin-top: 2rem;
+    font-size: 2rem;
 }
 
 button {
     padding: 1rem 2rem;
     border-radius: 3rem;
+    max-width: 10rem;
     cursor: pointer;
     border: 0.3rem solid black;
     background-color: black;
     color: white;
     transition: all 0.5s ease-in;
+    align-self: center;
 }
 
 
