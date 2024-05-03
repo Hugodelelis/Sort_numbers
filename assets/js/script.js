@@ -14,9 +14,14 @@ sortButton.addEventListener('click', function() {
     const result = document.querySelector('#result')
     if (minValue > maxValue) {
         result.style.color = 'red'
-        return result.innerHTML = 'ERRO: O menor número é maior que o maior número'
-    } else {
-        result.style.color = 'white'
-    return result.innerHTML = sort
+        return result.innerHTML = 'ERRO: O menor número é maior que o maior número!'
+    } 
+    
+    if (!minValue && !maxValue) {
+        result.style.color = 'red'
+        return result.innerHTML = 'ERRO: Preencha os requisitos!'
     }
+    
+    result.style.color = 'white'
+    return result.innerHTML = sort
 })
