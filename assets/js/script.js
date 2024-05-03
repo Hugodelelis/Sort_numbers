@@ -17,12 +17,12 @@ sortButton.addEventListener('click', function() {
         return result.innerHTML = 'ERRO: O menor número é maior que o maior número!'
     } 
     
-    if (!minValue && !maxValue) {
+    if (!minValue || !maxValue) {
         result.style.color = 'red'
         return result.innerHTML = 'ERRO: Preencha os requisitos!'
     }
 
-    if (minValue < 0 && maxValue > 0) {
+    if (minValue < 0 || maxValue < 0) {
         result.style.color = 'red'
         return result.innerHTML = 'ERRO: Não digite números negativos!'
     }
