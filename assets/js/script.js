@@ -14,7 +14,6 @@ sortButton.addEventListener('click', function() {
     const result = document.querySelector('#result')
     if (minValue > maxValue) {
         result.style.color = 'red'
-        result.style.fontsize = '10px'
         return result.innerHTML = 'ERRO: O menor número é maior que o maior número'
     } else {
         result.style.color = 'white'
