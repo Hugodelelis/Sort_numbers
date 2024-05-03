@@ -1,7 +1,7 @@
 # About:
-<br>Listener is a website for to-do lists with options such as adding and deleting tasks.
+<br>A random number drawer where you can enter the parameters for the smallest and largest number to be drawn.
 
-![image](https://github.com/Hugodelelis/Listener/assets/138935214/a4a319dd-7244-4adf-96cb-d3b07e099c86)
+![image](https://github.com/Hugodelelis/Sort_numbers/assets/138935214/24332690-3849-409a-99b3-bba4229554ae)
 
 
 # 💻 Technologies:
