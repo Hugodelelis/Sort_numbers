@@ -21,6 +21,11 @@ sortButton.addEventListener('click', function() {
         result.style.color = 'red'
         return result.innerHTML = 'ERRO: Preencha os requisitos!'
     }
+
+    if (minValue < 0 && maxValue > 0) {
+        result.style.color = 'red'
+        return result.innerHTML = 'ERRO: Não digite números negativos!'
+    }
     
     result.style.color = 'white'
     return result.innerHTML = sort
