@@ -16,8 +16,13 @@ sortButton.addEventListener('click', function() {
         result.style.color = 'red'
         return result.innerHTML = 'ERRO: O menor número é maior que o maior número!'
     } 
+
+    if (minValue == maxValue) {
+        result.style.color = 'red'
+        return result.innerHTML = 'ERRO: os números são iguais!'
+    }
     
-    if (!minValue || !maxValue) {
+    if (minValue === '' || maxValue === '') {
         result.style.color = 'red'
         return result.innerHTML = 'ERRO: Preencha os requisitos!'
     }
